@@ -1,132 +1,118 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# React Native项目.gitignore
 
-# Virtual Environment
-venv/
-env/
-ENV/
-.env
-.venv
-env.bak/
-venv.bak/
-
-# PyQt
-*.qrc.py
-*_rc.py
-*.ui.py
-*.qm
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-.project
-.pydevproject
-.settings/
-*.sublime-workspace
-*.sublime-project
-
-# Logs and databases
-*.log
-*.sqlite
-*.db
-logs/
-
-# Project specific
-downloads/
-android-sdk/
-java/
-*.avd/
-.android/
-.gradle/
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# macOS
+# 开发环境
 .DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-# Coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-
-# Translations
-*.mo
-*.pot
-
-# Temporary files
-*.bak
-*.tmp
-*~
+.vscode/
+.idea/
 *.swp
 *.swo
-
-# Environment variables
 .env
-.env.local
-.env.*.local 
+.env.*
+!.env.example
 
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.npm/
+
+# React Native
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+dist/
+.metro-health-check*
+
+# iOS特定
+ios/build/
+ios/Pods/
+ios/Podfile.lock
+ios/DerivedData/
+ios/.xcode.env.local
+ios/xcuserdata/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android特定
+android/app/build/
+android/build/
+android/.gradle/
+android/gradle/
+android/local.properties
+android/captures/
+android/*.iml
+android/.cxx/
+android/*.apk
+android/*.aab
+android/release/
+android/app/release/
+android/app/debug/
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/index.android.bundle.meta
+android/app/src/main/res/drawable-*/
+android/app/src/main/res/raw/
+
+# 测试
+coverage/
+.jest/
+__tests__/coverage/
+
+# 构建缓存
+.eslintcache
+.babel-cache/
+.cache/
+.parcel-cache/
+
+# 日志文件
+logs/
+*.log
+
+# Hermes
+android/app/src/main/jni/prebuilt/lib/
+android/app/src/main/jni/prebuilt/include/
+android/app/src/debug/jni/prebuilt/lib/
+android/app/src/debug/jni/prebuilt/include/
+
+# CodePush
+.codepush/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# 其他
+.watchmanconfig
+.buckconfig
+.flowconfig
+.prettierignore
+.bundle/
+vendor/
+
+# 其他
 .cursor/
